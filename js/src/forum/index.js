@@ -21,6 +21,8 @@ app.initializers.add('flarum/nicknames', () => {
         </Button>
       );
     }
+    items.remove('changePassword');
+    items.remove('changeEmail');
   });
 
   extend(EditUserModal.prototype, 'oninit', function () {
